@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesafioCrudMvcComeia", "DesafioCrudMvcComeia\DesafioCrudMvcComeia.csproj", "{EC22C57E-85D6-438B-B15A-4C9B5AE4D80B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC22C57E-85D6-438B-B15A-4C9B5AE4D80B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC22C57E-85D6-438B-B15A-4C9B5AE4D80B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC22C57E-85D6-438B-B15A-4C9B5AE4D80B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC22C57E-85D6-438B-B15A-4C9B5AE4D80B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6EFC9D3-F134-4226-8AEC-279FDBF0FD64}
+	EndGlobalSection
+EndGlobal
