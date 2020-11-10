@@ -22,6 +22,7 @@ namespace DesafioCrudMvcComeia.Models
     
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+
             throw new UnintentionalCodeFirstException();
         }
     
