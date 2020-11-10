@@ -7,10 +7,10 @@
 <h2>Create</h2>
 
 
-@using (Html.BeginForm()) 
+@using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
-    
+
     <div class="form-horizontal">
         <h4>Empresas</h4>
         <hr />
@@ -61,4 +61,16 @@
 
 @section Scripts {
     @Scripts.Render("~/bundles/jqueryval")
+
+    <script src="~/jsMask/jquery-3.5.1.min.js"></script>
+
+    <script src="~/jsMask/jquery.mask.js"></script>
+    
+    <script>
+        $(document).ready(function () {
+
+            $('#telefone').mask('(00) 0 0000-0000');
+            $('#cnpj').mask('00.000.000/0000-00', { reverse: true });
+        });
+    </script>
 }
