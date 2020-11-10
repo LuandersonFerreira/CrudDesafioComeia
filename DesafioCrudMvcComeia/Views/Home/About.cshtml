@@ -1,7 +1,24 @@
 ﻿@{
-    ViewBag.Title = "About";
-}
-<h2>@ViewBag.Title.</h2>
-<h3>@ViewBag.Message</h3>
+    ViewBag.Title = "Api Random User";
 
-<p>Use this area to provide additional information.</p>
+    <table class="table">
+        <tr>
+            <td><b>Nome</b></td>
+            <td><b>Sobrenome</b></td>
+            <td><b>Endereço</b></td>
+            <td><b>Genero</b></td>
+            <td><b>Foto</b></td>
+        </tr>
+        @foreach (var pessoa in Model.results)
+        {
+            <tr>
+            <td>@pessoa.name.first</td>
+            <td>@pessoa.name.last</td>
+            <td>@pessoa.location.city, @pessoa.location.street, @pessoa.location.postcode</td>
+            <td>@pessoa.gender</td>
+            <td><img src="@pessoa.picture.medium" alt="Alternate Text" /></td>
+                
+            </tr>
+        }
+    </table>
+}

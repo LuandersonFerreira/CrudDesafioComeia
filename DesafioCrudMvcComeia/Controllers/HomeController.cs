@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using DesafioCrudMvcComeia.Models;
+using System.Net;
+using Newtonsoft.Json;
 
 
 namespace DesafioCrudMvcComeia.Controllers
@@ -16,16 +19,26 @@ namespace DesafioCrudMvcComeia.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "Your application description page.";
+            var url = "https://randomuser.me/api/?results=10";
+            WebClient wc = new WebClient();
+            var dados = wc.DownloadString(url);
+            var rs = JsonConvert.DeserializeObject<Resultado>(dados);
 
-            return View();
+            return View(rs);
         }
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            /*
+            var url = "https://randomuser.me/api/?results=1";
+            WebClient wc = new WebClient();
+            var dados = wc.DownloadString(url);
+            var rs = JsonConvert.DeserializeObject<Resultado>(dados);
 
+            return View(rs);
+            */
             return View();
         }
+
     }
 }
